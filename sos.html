@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AutoAid Pakistan | Emergency SOS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* SOS Specific Pulse Animation */
+    @keyframes sosPulse {
+      0% { box-shadow: 0 0 0 0 rgba(255, 77, 77, 0.7); }
+      70% { box-shadow: 0 0 0 30px rgba(255, 77, 77, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(255, 77, 77, 0); }
+    }
+    .sos-button {
+      width: 180px;
+      height: 180px;
+      background: radial-gradient(#ff4d4d, #b30000);
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      font-family: 'Orbitron';
+      font-weight: bold;
+      cursor: pointer;
+      border: 8px solid rgba(255, 255, 255, 0.1);
+      animation: sosPulse 2s infinite;
+      text-decoration: none;
+      margin: 40px auto;
+    }
+  </style>
+</head>
+<body>
+
+<div class="desktop-wrapper" style="background: linear-gradient(rgba(0,0,0,0.8), rgba(179, 0, 0, 0.3)), url('bg-road.png');">
+
+  <div class="content">
+
+    <div style="width: 100%; max-width: 500px; display: flex; align-items: center; margin-bottom: 20px;">
+        <a href="dashboard.html" style="color: #fff; text-decoration: none; font-family: 'Orbitron'; font-size: 12px; opacity: 0.6;">
+            <i class="fas fa-xmark"></i> CANCEL & EXIT
+        </a>
+    </div>
+
+    <div class="glass-panel" style="max-width: 500px; border: 1px solid rgba(255, 77, 77, 0.4); background: rgba(20, 0, 0, 0.6);">
+
+      <span class="badge" style="background: #ff4d4d; color: #fff; border: none;">EMERGENCY MODE</span>
+      
+      <h1 class="main-title" style="font-size: 32px; margin-top: 20px;">SOS <span>Rescue</span></h1>
+      <p style="color: rgba(255,255,255,0.7); font-family: 'Poppins'; font-size: 14px; margin-top: 10px;">
+        Tap the button below for immediate assistance. Your live location will be sent to our emergency response team.
+      </p>
+
+      <a href="searching.html" class="sos-button">
+          <i class="fas fa-hand-holding-medical" style="font-size: 40px; margin-bottom: 10px;"></i>
+          <span>SEND SOS</span>
+      </a>
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-top: 20px;">
+          <a href="tel:1122" style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 15px; text-decoration: none; border: 1px solid rgba(255,255,255,0.1);">
+              <i class="fas fa-ambulance" style="color: #ff4d4d; font-size: 20px;"></i>
+              <p style="color: #fff; font-size: 12px; font-family: 'Orbitron'; margin-top: 8px;">1122 RESCUE</p>
+          </a>
+          <a href="tel:15" style="background: rgba(255,255,255,0.05); padding: 15px; border-radius: 15px; text-decoration: none; border: 1px solid rgba(255,255,255,0.1);">
+              <i class="fas fa-shield-halved" style="color: #3a7bd5; font-size: 20px;"></i>
+              <p style="color: #fff; font-size: 12px; font-family: 'Orbitron'; margin-top: 8px;">15 POLICE</p>
+          </a>
+      </div>
+
+      <div style="margin-top: 30px; display: flex; align-items: center; justify-content: center; gap: 10px;">
+          <div style="width: 8px; height: 8px; background: #00ff88; border-radius: 50%; box-shadow: 0 0 10px #00ff88;"></div>
+          <p style="color: #00ff88; font-family: 'Orbitron'; font-size: 10px; letter-spacing: 1px;">SATELLITE LINK ACTIVE</p>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2025 AUTOAID PAKISTAN | EMERGENCY DISPATCH CENTER
+  </div>
+
+</div>
+
+</body>
+</html>

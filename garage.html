@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AutoAid Pakistan | My Garage</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<div class="desktop-wrapper">
+
+  <div class="content" style="max-width: 800px;">
+
+    <div style="width: 100%; display: flex; align-items: center; margin-bottom: 20px;">
+        <a href="dashboard.html" style="color: #00d2ff; text-decoration: none; font-family: 'Orbitron'; font-size: 12px; letter-spacing: 1px;">
+            <i class="fas fa-chevron-left"></i> BACK TO MENU
+        </a>
+    </div>
+
+    <div class="glass-panel" style="padding: 40px; text-align: left;">
+
+      <span class="badge">VIRTUAL GARAGE</span>
+      <h1 class="main-title" style="font-size: 32px;">My <span>Vehicles</span></h1>
+      <div class="glow-line"></div>
+
+      <p class="tagline">Manage your registered vehicles for quick assistance requests.</p>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; margin-top: 30px;">
+          
+          <div style="background: rgba(255,255,255,0.05); border: 1px solid rgba(0, 210, 255, 0.2); border-radius: 20px; padding: 20px; position: relative; overflow: hidden;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                  <div>
+                      <h3 style="color: #fff; font-family: 'Poppins'; margin: 0; font-size: 18px;">Honda Civic</h3>
+                      <p style="color: #00d2ff; font-family: 'Orbitron'; font-size: 10px; margin: 5px 0;">SEDAN • 2022</p>
+                  </div>
+                  <span style="background: rgba(0, 210, 255, 0.2); color: #00d2ff; font-size: 9px; padding: 4px 8px; border-radius: 5px; font-family: 'Orbitron';">PRIMARY</span>
+              </div>
+              
+              <div style="margin-top: 15px; display: flex; align-items: center; gap: 15px;">
+                  <i class="fas fa-car" style="font-size: 40px; color: rgba(255,255,255,0.1);"></i>
+                  <div>
+                      <p style="color: rgba(255,255,255,0.5); font-size: 10px; margin: 0; font-family: 'Orbitron';">PLATE NUMBER</p>
+                      <p style="color: #fff; font-size: 16px; margin: 0; font-family: 'Poppins'; font-weight: bold;">LEA-4492</p>
+                  </div>
+              </div>
+
+              <div style="margin-top: 20px; display: flex; gap: 10px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 15px;">
+                  <button style="flex: 1; background: transparent; border: 1px solid rgba(255,255,255,0.1); color: #fff; font-size: 11px; padding: 8px; border-radius: 8px; cursor: pointer; font-family: 'Poppins';"><i class="fas fa-edit"></i> Edit</button>
+                  <button style="flex: 1; background: transparent; border: 1px solid rgba(255, 77, 77, 0.2); color: #ff4d4d; font-size: 11px; padding: 8px; border-radius: 8px; cursor: pointer; font-family: 'Poppins';"><i class="fas fa-trash"></i> Remove</button>
+              </div>
+          </div>
+
+          <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255, 255, 255, 0.05); border-radius: 20px; padding: 20px; opacity: 0.8;">
+              <div style="display: flex; justify-content: space-between; align-items: flex-start;">
+                  <div>
+                      <h3 style="color: #fff; font-family: 'Poppins'; margin: 0; font-size: 18px;">Yamaha YBR</h3>
+                      <p style="color: rgba(255,255,255,0.4); font-family: 'Orbitron'; font-size: 10px; margin: 5px 0;">BIKE • 2021</p>
+                  </div>
+              </div>
+              
+              <div style="margin-top: 15px; display: flex; align-items: center; gap: 15px;">
+                  <i class="fas fa-motorcycle" style="font-size: 40px; color: rgba(255,255,255,0.1);"></i>
+                  <div>
+                      <p style="color: rgba(255,255,255,0.5); font-size: 10px; margin: 0; font-family: 'Orbitron';">PLATE NUMBER</p>
+                      <p style="color: #fff; font-size: 16px; margin: 0; font-family: 'Poppins'; font-weight: bold;">KHI-9921</p>
+                  </div>
+              </div>
+
+              <div style="margin-top: 20px; display: flex; gap: 10px; border-top: 1px solid rgba(255,255,255,0.05); padding-top: 15px;">
+                  <button style="flex: 1; background: transparent; border: 1px solid rgba(255,255,255,0.1); color: #fff; font-size: 11px; padding: 8px; border-radius: 8px; cursor: pointer; font-family: 'Poppins';"><i class="fas fa-edit"></i> Edit</button>
+                  <button style="flex: 1; background: transparent; border: 1px solid rgba(255, 77, 77, 0.2); color: #ff4d4d; font-size: 11px; padding: 8px; border-radius: 8px; cursor: pointer; font-family: 'Poppins';"><i class="fas fa-trash"></i> Remove</button>
+              </div>
+          </div>
+
+          <div style="border: 2px dashed rgba(0, 210, 255, 0.3); border-radius: 20px; display: flex; flex-direction: column; justify-content: center; align-items: center; cursor: pointer; height: 180px; transition: 0.3s;" onmouseover="this.style.background='rgba(0,210,255,0.05)';" onmouseout="this.style.background='transparent';">
+              <i class="fas fa-plus-circle" style="color: #00d2ff; font-size: 30px; margin-bottom: 10px;"></i>
+              <p style="color: #fff; font-family: 'Orbitron'; font-size: 11px; letter-spacing: 1px;">ADD NEW VEHICLE</p>
+          </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2025 AUTOAID PAKISTAN | FLEET MANAGEMENT SYSTEM
+  </div>
+
+</div>
+
+</body>
+</html>

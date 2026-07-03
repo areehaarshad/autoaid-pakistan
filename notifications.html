@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AutoAid | Notification Center</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .notif-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 15px;
+      margin-bottom: 12px;
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      transition: 0.3s;
+      cursor: pointer;
+      text-align: left;
+    }
+    .notif-card:hover {
+      background: rgba(0, 210, 255, 0.08);
+      border-color: rgba(0, 210, 255, 0.3);
+      transform: translateX(5px);
+    }
+    .notif-unread {
+      border-left: 4px solid #00d2ff;
+      background: rgba(0, 210, 255, 0.03);
+    }
+    .icon-box {
+      width: 45px;
+      height: 45px;
+      border-radius: 12px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="desktop-wrapper">
+
+  <div class="content" style="max-width: 700px;">
+
+    <div style="width: 100%; display: flex; align-items: center; margin-bottom: 20px;">
+        <a href="dashboard.html" style="color: #00d2ff; text-decoration: none; font-family: 'Orbitron'; font-size: 12px;">
+            <i class="fas fa-arrow-left"></i> BACK
+        </a>
+    </div>
+
+    <div class="glass-panel" style="padding: 35px;">
+
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px;">
+          <div>
+              <span class="badge">UPDATES</span>
+              <h1 class="main-title" style="font-size: 28px; margin: 5px 0 0 0;">Notifications</h1>
+          </div>
+          <button style="background: transparent; border: 1px solid rgba(255,255,255,0.2); color: rgba(255,255,255,0.6); padding: 5px 12px; border-radius: 8px; font-size: 10px; font-family: 'Orbitron'; cursor: pointer;">
+              MARK ALL AS READ
+          </button>
+      </div>
+
+      <div class="glow-line" style="margin-bottom: 25px;"></div>
+
+      <div style="max-height: 500px; overflow-y: auto; padding-right: 10px;">
+
+          <div class="notif-card notif-unread">
+              <div class="icon-box" style="background: rgba(0, 210, 255, 0.1); color: #00d2ff;">
+                  <i class="fas fa-check-double"></i>
+              </div>
+              <div style="flex-grow: 1;">
+                  <h4 style="color: #fff; font-family: 'Poppins'; margin: 0; font-size: 14px;">Service Completed</h4>
+                  <p style="color: rgba(255,255,255,0.5); font-size: 12px; margin: 3px 0;">Your request for Jump Start has been successfully closed.</p>
+                  <span style="color: #00d2ff; font-family: 'Orbitron'; font-size: 9px;">2 MINS AGO</span>
+              </div>
+          </div>
+
+          <div class="notif-card">
+              <div class="icon-box" style="background: rgba(0, 255, 136, 0.1); color: #00ff88;">
+                  <i class="fas fa-receipt"></i>
+              </div>
+              <div style="flex-grow: 1;">
+                  <h4 style="color: #fff; font-family: 'Poppins'; margin: 0; font-size: 14px;">Payment Confirmed</h4>
+                  <p style="color: rgba(255,255,255,0.5); font-size: 12px; margin: 3px 0;">Rs. 1,550 received via EasyPaisa for Service #AA-992.</p>
+                  <span style="color: rgba(255,255,255,0.3); font-family: 'Orbitron'; font-size: 9px;">1 HOUR AGO</span>
+              </div>
+          </div>
+
+          <div class="notif-card">
+              <div class="icon-box" style="background: rgba(255, 204, 0, 0.1); color: #ffcc00;">
+                  <i class="fas fa-bolt"></i>
+              </div>
+              <div style="flex-grow: 1;">
+                  <h4 style="color: #fff; font-family: 'Poppins'; margin: 0; font-size: 14px;">Special Discount!</h4>
+                  <p style="color: rgba(255,255,255,0.5); font-size: 12px; margin: 3px 0;">Get 20% OFF on your next Towing service with code: AUTO20.</p>
+                  <span style="color: rgba(255,255,255,0.3); font-family: 'Orbitron'; font-size: 9px;">YESTERDAY</span>
+              </div>
+          </div>
+
+          <div class="notif-card">
+              <div class="icon-box" style="background: rgba(255, 77, 77, 0.1); color: #ff4d4d;">
+                  <i class="fas fa-triangle-exclamation"></i>
+              </div>
+              <div style="flex-grow: 1;">
+                  <h4 style="color: #fff; font-family: 'Poppins'; margin: 0; font-size: 14px;">Security Alert</h4>
+                  <p style="color: rgba(255,255,255,0.5); font-size: 12px; margin: 3px 0;">Your password was changed successfully.</p>
+                  <span style="color: rgba(255,255,255,0.3); font-family: 'Orbitron'; font-size: 9px;">2 DAYS AGO</span>
+              </div>
+          </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2025 AUTOAID PAKISTAN | USER NOTIFICATION HUB
+  </div>
+
+</div>
+
+</body>
+</html>

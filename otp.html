@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AutoAid Pakistan | OTP Verification</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="desktop-wrapper">
+
+  <div class="content">
+
+    <div class="logo-wrapper">
+      <div class="logo-circle">
+        <img src="bg-road.png" class="logo" alt="AutoAid Logo">
+      </div>
+    </div>
+
+    <div class="glass-panel">
+
+      <span class="badge">SECURITY CHECK</span>
+
+      <h1 class="main-title">
+        Verify <span>OTP</span>
+      </h1>
+
+      <div class="glow-line"></div>
+
+      <p class="tagline">
+        We have sent a 4-digit verification code to your registered mobile number.
+        Please enter it below to proceed.
+      </p>
+
+      <form style="margin-top:35px;" onsubmit="event.preventDefault(); window.location.href='dashboard.html';">
+        
+        <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 30px;">
+          <input type="text" maxlength="1" required style="width:60px; height:60px; text-align:center; font-size:24px; font-weight:bold; border-radius:12px; border:1px solid rgba(255,255,255,0.25); background:rgba(255,255,255,0.1); color:#00d2ff; outline:none; font-family:'Orbitron', sans-serif;">
+          <input type="text" maxlength="1" required style="width:60px; height:60px; text-align:center; font-size:24px; font-weight:bold; border-radius:12px; border:1px solid rgba(255,255,255,0.25); background:rgba(255,255,255,0.1); color:#00d2ff; outline:none; font-family:'Orbitron', sans-serif;">
+          <input type="text" maxlength="1" required style="width:60px; height:60px; text-align:center; font-size:24px; font-weight:bold; border-radius:12px; border:1px solid rgba(255,255,255,0.25); background:rgba(255,255,255,0.1); color:#00d2ff; outline:none; font-family:'Orbitron', sans-serif;">
+          <input type="text" maxlength="1" required style="width:60px; height:60px; text-align:center; font-size:24px; font-weight:bold; border-radius:12px; border:1px solid rgba(255,255,255,0.25); background:rgba(255,255,255,0.1); color:#00d2ff; outline:none; font-family:'Orbitron', sans-serif;">
+        </div>
+
+        <button
+          type="submit"
+          style="
+            width:100%;
+            padding:14px;
+            border-radius:18px;
+            border:none;
+            background:linear-gradient(90deg,#00d2ff,#3a7bd5);
+            color:#fff;
+            font-size:14px;
+            letter-spacing:2px;
+            font-family:'Orbitron',sans-serif;
+            cursor:pointer;
+            box-shadow: 0 10px 20px rgba(0, 210, 255, 0.2);
+          "
+        >
+          VERIFY & CONTINUE
+        </button>
+
+      </form>
+
+      <div style="margin-top:25px; font-size:12px; letter-spacing:1px;">
+        <span style="color: rgba(255,255,255,0.5);">Didn't receive code?</span>
+        <br><br>
+        <a href="#" style="color:#00d2ff; text-decoration:none; font-weight: 600;">RESEND OTP (59s)</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2025 AUTOAID PAKISTAN | TWO-FACTOR AUTHENTICATION
+  </div>
+
+</div>
+
+</body>
+</html>

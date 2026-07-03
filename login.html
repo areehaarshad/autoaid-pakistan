@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AutoAid Pakistan | Secure Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="desktop-wrapper">
+
+  <div class="content">
+
+    <!-- LOGO -->
+    <div class="logo-wrapper">
+      <div class="logo-circle">
+        <img src="bg-road.png" class="logo" alt="AutoAid Logo">
+      </div>
+    </div>
+
+    <!-- LOGIN PANEL -->
+    <div class="glass-panel">
+
+      <span class="badge">SECURE LOGIN</span>
+
+      <h1 class="main-title">
+        User <span>Access</span>
+      </h1>
+
+      <div class="glow-line"></div>
+
+      <p class="tagline">
+        Sign in to request roadside assistance, track services,
+        and manage your AutoAid account securely.
+      </p>
+
+      <!-- FORM -->
+      <form style="margin-top:35px;" onsubmit="event.preventDefault(); window.location.href='dashboard.html';">
+
+        <input 
+          type="email"
+          placeholder="Email Address"
+          required
+          style="
+            width:100%;
+            padding:14px 18px;
+            border-radius:14px;
+            border:1px solid rgba(255,255,255,0.25);
+            background:rgba(255,255,255,0.08);
+            color:#fff;
+            font-size:14px;
+            margin-bottom:18px;
+            outline:none;
+          "
+        >
+
+        <input 
+          type="password"
+          placeholder="Password"
+          required
+          style="
+            width:100%;
+            padding:14px 18px;
+            border-radius:14px;
+            border:1px solid rgba(255,255,255,0.25);
+            background:rgba(255,255,255,0.08);
+            color:#fff;
+            font-size:14px;
+            margin-bottom:25px;
+            outline:none;
+          "
+        >
+
+        <button
+          type="submit"
+          style="
+            width:100%;
+            padding:14px;
+            border-radius:18px;
+            border:none;
+            background:linear-gradient(90deg,#00d2ff,#3a7bd5);
+            color:#fff;
+            font-size:14px;
+            letter-spacing:2px;
+            font-family:'Orbitron',sans-serif;
+            cursor:pointer;
+          "
+        >
+          LOGIN
+        </button>
+
+      </form>
+
+      <!-- LINKS -->
+      <div style="margin-top:25px; font-size:12px; letter-spacing:1px;">
+        <a href="#" style="color:#00d2ff; text-decoration:none;">Forgot Password?</a>
+        &nbsp; | &nbsp;
+        <a href="register.html" style="color:#00d2ff; text-decoration:none;">Create Account</a>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2025 AUTOAID PAKISTAN | USER AUTHENTICATION PORTAL
+  </div>
+
+</div>
+
+</body>
+</html>

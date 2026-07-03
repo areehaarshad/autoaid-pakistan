@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body {
+  background: #050505;
+  overflow: hidden; /* Desktop par scroll bar hide karne ke liye */
+}
+
+/* --- FULL SCREEN WRAPPER FOR LAPTOP --- */
+.desktop-wrapper {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  /* High Quality Background */
+  background: 
+    linear-gradient(135deg, rgba(0,0,0,0.4) 0%, rgba(13, 110, 253, 0.3) 100%),
+    url("scene-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Laptop par parallax effect ke liye */
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.logo-wrapper:hover {
+  transform: scale(1.05); /* Laptop mouse hover effect */
+}
+/* --- LOGO: PERFECT UNIVERSAL FIT --- */
+.logo-wrapper {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  transition: transform 0.4s ease;
+}
+
+.logo-wrapper:hover {
+  transform: scale(1.05);
+}
+
+.logo-circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  /* WHITE background taake black logo saaf nazar aaye */
+  background: #060606; 
+  /* Glowing blue border jo dark background par uth kar dikhay dega */
+  border: 4px solid #3a7bd5; 
+  box-shadow: 0 0 30px rgba(13, 110, 253, 0.6); 
+  
+  padding: 15px; /* Logo aur border ke beech gap taake professional lage */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  /* "contain" logo ko stretch hone se bachayega aur poora dikhayega */
+  object-fit: contain; 
+  display: block;
+}
+
+/* Responsive fix taake mobile par bhi kharab na ho */
+@media (max-width: 768px) {
+    .logo-circle {
+        width: 120px;
+        height: 120px;
+        padding: 10px;
+    }
+}
+/* --- GLASS PANEL: ENHANCED FOR BIG SCREEN --- */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+  padding: 50px 60px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  text-align: center;
+  width: 100%;
+  max-width: 650px; /* Perfect width for laptop reading */
+  box-shadow: 0 40px 100px rgba(0,0,0,0.5);
+  transition: all 0.5s ease;
+}
+
+.glass-panel:hover {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.badge {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 12px;
+  letter-spacing: 4px;
+  color: #00d2ff;
+  background: rgba(0, 210, 255, 0.1);
+  padding: 6px 20px;
+  border-radius: 30px;
+  display: inline-block;
+  margin-bottom: 25px;
+  border: 1px solid rgba(0, 210, 255, 0.3);
+}
+
+.main-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 48px; /* Bigger for desktop */
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.main-title span {
+  background: linear-gradient(90deg, #00d2ff, #3a7bd5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.glow-line {
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #00d2ff, transparent);
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
+.tagline {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px; /* Readable on big screens */
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.7);
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.app-status {
+  margin-top: 30px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 11px;
+  color: rgba(255,255,255,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  letter-spacing: 1px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  background: #00ff88;
+  border-radius: 50%;
+  box-shadow: 0 0 15px #00ff88;
+  animation: pulseGreen 2s infinite;
+}
+
+/* --- LOADING BAR --- */
+.shimmer-container {
+    margin-top: 50px;
+    width: 300px;
+    height: 4px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.shimmer-bar {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, #00d2ff, transparent);
+    animation: loadingMove 2s infinite ease-in-out;
+}
+
+/* --- FOOTER --- */
+.footer {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: rgba(255,255,255,0.3);
+}
+
+/* --- ANIMATIONS --- */
+@keyframes pulseGreen {
+  0% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.5); opacity: 0.5; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes loadingMove {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* RESPONSIVE FOR MOBILE */
+@media (max-width: 768px) {
+    .main-title { font-size: 28px; }
+    .glass-panel { padding: 30px 20px; margin: 0 20px; }
+    .logo-circle { width: 150px; height: 150px; }
+}
